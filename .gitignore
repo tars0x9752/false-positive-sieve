@@ -1,0 +1,10 @@
+node_modules
+/lib
+*.csv
+*.json
+
+!tsconfig.json
+!package.json
+!jest.config.json
+!.eslintrc.json
+!dummy.json
