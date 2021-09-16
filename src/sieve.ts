@@ -24,9 +24,7 @@ export const sieve = async (susList: SuspiciousRecord[]): Promise<SuspiciousReco
 
   return Array.from(suspiciousRecordsMap.entries())
     .filter(([, record]) => {
-      const isIgnorable = record.rule !== TargetRule
-
-      if (isIgnorable) {
+      if (record.rule !== TargetRule) {
         return true
       }
 
